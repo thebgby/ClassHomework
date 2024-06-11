@@ -1,307 +1,206 @@
-# Project 1: Library Management System
+### Python Questions: Comprehensive Topics
 
-## Classes
+1. **Numbers:**
 
-### Book
+   - Write a Python function `is_prime(n)` that returns `True` if the number `n` is a prime number, and `False` otherwise.
+   - Write a Python function `fibonacci(n)` that returns the `n`-th Fibonacci number.
+   - Write a Python function `gcd(a, b)` that calculates the greatest common divisor of `a` and `b`.
 
-- **Attributes**:
-  - `title`: Title of the book
-  - `author`: Author of the book
-  - `isbn`: ISBN number of the book
-  - `copies`: Number of copies available
+2. **Operators:**
 
-### Patron
+   - Write a Python function `evaluate_expression(expr)` that takes a mathematical expression in the form of a string (e.g., `"3 + 5 * 2"`) and returns the result.
+   - Write a Python function `bitwise_operations(a, b)` that takes two integers and performs bitwise AND, OR, and XOR operations.
+   - Write a Python function `is_bit_shifted_correctly(n, shift)` that returns `True` if `n` shifted left by `shift` produces the expected result.
 
-- **Attributes**:
-  - `name`: Name of the patron
-  - `patron_id`: Unique ID of the patron
-  - `borrowed_books`: List of books borrowed by the patron
+3. **Booleans:**
 
-### LibraryCRUD
+   - Write a Python function `boolean_operations(a, b)` that performs `and`, `or`, and `not` operations on two boolean values.
+   - Write a Python function `is_palindrome(s)` that returns `True` if a string `s` is a palindrome, and `False` otherwise.
+   - Write a Python function `find_all_trues(lst)` that returns the indices of all `True` values in a list of boolean values.
 
-- **Attributes**:
-  - `books`: List of books in the library
-  - `patrons`: List of patrons registered in the library
+4. **Strings:**
 
-## Methods
+   - Write a Python function `reverse_string(s)` that returns the string reversed.
+   - Write a Python function `count_vowels(s)` that counts the number of vowels in a string.
+   - Write a Python function `find_substring(s, sub)` that returns the index of the first occurrence of a substring `sub` in a string `s`.
 
-### add_book
+5. **Lists:**
 
-- **Description**: Adds a book to the library.
-- **Parameters**:
-  - `book`: An instance of the `Book` class.
+   - Write a Python function `remove_duplicates(lst)` that removes duplicates from a list while preserving the order.
+   - Write a Python function `sum_elements(lst)` that returns the sum of all elements in a list of numbers.
+   - Write a Python function `reverse_list(lst)` that reverses a list.
 
-### view_books
+6. **Tuples:**
 
-- **Description**: Displays all books in the library.
+   - Write a Python function `concatenate_tuples(t1, t2)` that concatenates two tuples.
+   - Write a Python function `tuple_to_dict(t)` that converts a tuple of (key, value) pairs into a dictionary.
+   - Write a Python function `find_max_tuple(lst)` that returns the tuple with the maximum first value from a list of tuples.
 
-### update_book
+7. **Dictionaries:**
 
-- **Description**: Updates details of a book.
-- **Parameters**:
-  - `isbn`: ISBN number of the book to be updated.
-  - `title`: (Optional) New title of the book.
-  - `author`: (Optional) New author of the book.
-  - `copies`: (Optional) New number of copies.
+   - Write a Python function `merge_dicts(d1, d2)` that merges two dictionaries into one.
+   - Write a Python function `filter_dict_by_value(d, threshold)` that returns a new dictionary where values greater than a `threshold` are filtered out.
+   - Write a Python function `get_value_by_key(d, key)` that returns the value for a specific key in a dictionary.
 
-### delete_book
+8. **Loops:**
 
-- **Description**: Deletes a book from the library.
-- **Parameters**:
-  - `isbn`: ISBN number of the book to be deleted.
+   - Write a Python function `count_vowels_in_sentence(sentence)` that uses a loop to count the number of vowels in a sentence.
+   - Write a Python function `generate_multiples(n, count)` that generates and returns a list of `count` multiples of `n`.
+   - Write a Python function `sum_numbers_until_zero(lst)` that sums the numbers in a list until a zero is encountered.
 
-### add_patron
+9. **List Comprehensions:**
 
-- **Description**: Adds a patron to the library.
-- **Parameters**:
-  - `patron`: An instance of the `Patron` class.
+   - Write a Python function `square_numbers(lst)` that returns a list of squares of numbers in a list using list comprehensions.
+   - Write a Python function `filter_odd_numbers(lst)` that returns a list of odd numbers from a list using list comprehensions.
+   - Write a Python function `string_lengths(lst)` that returns a list of lengths of strings in a list using list comprehensions.
 
-### view_patrons
+10. **Conditionals:**
 
-- **Description**: Displays all patrons in the library.
+    - Write a Python function `grade(score)` that takes a test score and returns a grade based on the following scheme:
+      - A: 90-100
+      - B: 80-89
+      - C: 70-79
+      - D: 60-69
+      - F: 0-59
 
-### update_patron
+11. **File Handling:**
 
-- **Description**: Updates details of a patron.
-- **Parameters**:
-  - `patron_id`: Unique ID of the patron to be updated.
-  - `name`: (Optional) New name of the patron.
+    - Write a Python function `read_file(filename)` that reads a file and returns its content.
+    - Write a Python function `write_to_file(filename, content)` that writes content to a specified file.
 
-### delete_patron
+12. **JSON:**
 
-- **Description**: Deletes a patron from the library.
-- **Parameters**:
-  - `patron_id`: Unique ID of the patron to be deleted.
+    - Write a Python function `parse_json(json_string)` that takes a JSON string and returns the corresponding Python object.
+    - Write a Python script that reads a JSON file and prints out specific fields from it.
 
-### borrow_book
+13. **Regex:**
 
-- **Description**: Allows a patron to borrow a book.
-- **Parameters**:
-  - `patron_id`: Unique ID of the patron borrowing the book.
-  - `isbn`: ISBN number of the book to be borrowed.
+    - Write a Python function `extract_emails(text)` that takes a string `text` and returns a list of all the email addresses found within the string.
+    - Write a Python script that uses regex to identify and replace all occurrences of non-alphanumeric characters in a string with an underscore.
 
-### return_book
+14. **Functions:**
 
-- **Description**: Allows a patron to return a book.
-- **Parameters**:
-  - `patron_id`: Unique ID of the patron returning the book.
-  - `isbn`: ISBN number of the book to be returned.
+    - Write a Python function `is_armstrong_number(n)` that returns `True` if the number `n` is an Armstrong number, and `False` otherwise.
+    - Write a Python function `factorial(n)` that returns the factorial of a given number `n`.
 
-### save_to_file
+15. **Recursion:**
 
-- **Description**: Saves the library data to a file.
-- **Parameters**:
-  - `filename`: Name of the file to save the data to.
+    - Write a recursive function `fibonacci(n)` that returns the `n`-th Fibonacci number.
+    - Write a recursive function `sum_of_numbers(n)` that calculates the sum of the first `n` natural numbers.
 
-### load_from_file
+16. **Lambda Functions:**
 
-- **Description**: Loads the library data from a file.
-- **Parameters**:
-  - `filename`: Name of the file to load the data from.
+    - Write a lambda function that takes two arguments and returns their product. Assign this function to a variable named `multiply`.
 
-# Project 2: Football Team Management System
+17. **Object-Oriented Programming:**
 
-## Classes
+    - Write a Python class `Rectangle` with attributes `width` and `height`. Include a method `area()` that returns the area of the rectangle.
+    - Write a Python class `Square` that inherits from the `Rectangle` class. Add an `__init__` method that takes one argument `side` and initializes both `width` and `height` with this value.
 
-### Player
+18. **Modules:**
 
-- **Attributes**:
-  - `name`: Name of the player
-  - `age`: Age of the player
-  - `position`: Position of the player
+    - Write a module named `math_utils.py` that includes a function `is_prime(n)` which returns `True` if `n` is a prime number and `False` otherwise. Import and use this module in another script.
 
-### Team
+19. **Date and Time:**
 
-- **Attributes**:
-  - `team_name`: Name of the team
-  - `team_id`: Unique ID of the team
-  - `players`: List of players in the team
+    - Write a Python function `calculate_age(birthdate)` that takes a birthdate string in the format `YYYY-MM-DD` and returns the age in years.
+    - Write a Python script to find the current day of the week.
 
-### FootballTeamManagementSystem
+20. **Decorators:**
+    - Write a decorator `timing_decorator` that measures the time a function takes to execute. Apply this decorator to a function `slow_function()` which sleeps for 2 seconds before returning a message "Finished".
 
-- **Attributes**:
-  - `players`: List of players
-  - `teams`: List of teams
+### Python Pandas Puzzle Questions
 
-## Methods
+1. **DataFrame Creation:**
 
-### add_player
+   - Create a Pandas DataFrame from a dictionary where the keys are column names and the values are lists of data. The DataFrame should represent a table with sample data.
 
-- **Description**: Adds a player to the system.
-- **Parameters**:
-  - `player`: An instance of the `Player` class.
+2. **Data Filtering:**
 
-### view_players
+   - Using an existing DataFrame, write a function `filter_data(df, column, value)` that filters the DataFrame based on a specific value in a given column.
 
-- **Description**: Displays all players in the system.
+3. **Data Transformation:**
 
-### update_player
+   - Write a function `normalize_column(df, column)` that normalizes the values in a given column of a DataFrame using min-max scaling.
 
-- **Description**: Updates details of a player.
-- **Parameters**:
-  - `name`: Name of the player to be updated.
-  - `new_name`: (Optional) New name of the player.
-  - `new_age`: (Optional) New age of the player.
-  - `new_position`: (Optional) New position of the player.
+4. **Group by and Aggregate:**
 
-### delete_player
+   - Using a DataFrame, write a function `average_by_group(df, group_col, agg_col)` that computes the average of a specified column, grouped by another column.
 
-- **Description**: Deletes a player from the system.
-- **Parameters**:
-  - `name`: Name of the player to be deleted.
+5. **Join DataFrames:**
+   - Write a function `join_dataframes(df1, df2, on)` that joins two Pandas DataFrames based on a common column, using an appropriate join type.
 
-### add_team
+### Python Questions
 
-- **Description**: Adds a team to the system.
-- **Parameters**:
-  - `team`: An instance of the `Team` class.
+1. **Datetime:**
 
-### view_teams
+   - Write a Python function `calculate_age(birthdate)` that takes a birthdate string in the format `YYYY-MM-DD` and returns the age in years.
 
-- **Description**: Displays all teams in the system.
+2. **Datetime:**
 
-### update_team
+   - Write a Python script to find the current day of the week.
 
-- **Description**: Updates details of a team.
-- **Parameters**:
-  - `team_id`: Unique ID of the team to be updated.
-  - `new_name`: (Optional) New name of the team.
+3. **Regex:**
 
-### delete_team
+   - Write a Python function `extract_emails(text)` that takes a string `text` and returns a list of all the email addresses found within the string.
 
-- **Description**: Deletes a team from the system.
-- **Parameters**:
-  - `team_id`: Unique ID of the team to be deleted.
+4. **Regex:**
 
-### assign_player_to_team
+   - Write a Python script that uses regex to identify and replace all occurrences of non-alphanumeric characters in a string with an underscore.
 
-- **Description**: Assigns a player to a team.
-- **Parameters**:
-  - `player_name`: Name of the player to be assigned.
-  - `team_id`: Unique ID of the team.
+5. **JSON:**
 
-### remove_player_from_team
+   - Write a Python function `parse_json(json_string)` that takes a JSON string and returns the corresponding Python object.
 
-- **Description**: Removes a player from a team.
-- **Parameters**:
-  - `player_name`: Name of the player to be removed.
-  - `team_id`: Unique ID of the team.
+6. **JSON:**
 
-### save_to_file
+   - Write a Python script that reads a JSON file and prints out specific fields from it.
 
-- **Description**: Saves the system data to a file.
-- **Parameters**:
-  - `filename`: Name of the file to save the data to.
+7. **Requests:**
 
-### load_from_file
+   - Write a Python function `make_request(url, params)` that makes a GET request to a given URL with optional query parameters and returns the response.
 
-- **Description**: Loads the system data from a file.
-- **Parameters**:
-  - `filename`: Name of the file to load the data from.
+8. **Requests:**
 
-# Project 3: E-commerce System
+   - Write a Python script that sends a POST request to a URL with JSON data and prints out the server's response.
 
-## Classes
+9. **Databases:**
 
-### Product
+   - Write a Python script that connects to a SQL database and executes a SELECT query to fetch data from a specific table.
 
-- **Attributes**:
-  - `product_id`: Unique ID of the product
-  - `name`: Name of the product
-  - `price`: Price of the product
-  - `stock`: Stock quantity of the product
+10. **Databases:**
+    - Write a Python script that inserts a new record into a database table.
 
-### Customer
+### Python Questions using NumPy
 
-- **Attributes**:
-  - `customer_id`: Unique ID of the customer
-  - `name`: Name of the customer
-  - `cart`: List of products in the customer's cart
+1. **Array Creation:**
 
-### Order
+   - Write a Python function `create_random_array(size, low, high)` that generates and returns a NumPy array of `size` random integers between `low` and `high`.
 
-- **Attributes**:
-  - `order_id`: Unique ID of the order
-  - `customer`: The customer who placed the order
-  - `products`: List of products in the order
-  - `total`: Total price of the order
+2. **Array Operations:**
 
-### EcommerceSystem
+   - Write a Python function `calculate_statistics(arr)` that takes a NumPy array `arr` and returns the mean, median, and standard deviation.
 
-- **Attributes**:
-  - `products`: List of products in the system
-  - `customers`: List of customers in the system
-  - `orders`: List of orders placed
+3. **Indexing and Slicing:**
 
-## Methods
+   - Write a Python function `get_odd_elements(arr)` that takes a NumPy array `arr` and returns a new array containing only the odd numbers.
 
-### add_product
+4. **Boolean Indexing:**
 
-- **Description**: Adds a product to the system.
-- **Parameters**:
-  - `product`: An instance of the `Product` class.
+   - Write a Python script that uses boolean indexing to filter out elements in a NumPy array that are greater than a given threshold.
 
-### view_products
+5. **Linear Algebra:**
+   - Write a Python function `matrix_multiplication(matrix1, matrix2)` that takes two NumPy 2D arrays (matrices) and returns the result of their matrix multiplication.
 
-- **Description**: Displays all products in the system.
+### Python Questions using Matplotlib
 
-### update_product
+1. **Basic Plot:**
 
-- **Description**: Updates details of a product.
-- **Parameters**:
-  - `product_id`: Unique ID of the product to be updated.
-  - `name`: (Optional) New name of the product.
-  - `price`: (Optional) New price of the product.
-  - `stock`: (Optional) New stock quantity of the product.
+   - Write a Python function `plot_sine_wave()` that generates a plot of the sine wave from 0 to 2π using Matplotlib.
 
-### delete_product
+2. **Scatter Plot:**
 
-- **Description**: Deletes a product from the system.
-- **Parameters**:
-  - `product_id`: Unique ID of the product to be deleted.
+   - Write a Python function `plot_scatter(x, y)` that generates a scatter plot from two lists of `x` and `y` coordinates.
 
-### add_customer
-
-- **Description**: Adds a customer to the system.
-- **Parameters**:
-  - `customer`: An instance of the `Customer` class.
-
-### view_customers
-
-- **Description**: Displays all customers in the system.
-
-### update_customer
-
-- **Description**: Updates details of a customer.
-- **Parameters**:
-  - `customer_id`: Unique ID of the customer to be updated.
-  - `name`: (Optional) New name of the customer.
-
-### delete_customer
-
-- **Description**: Deletes a customer from the system.
-- **Parameters**:
-  - `customer_id`: Unique ID of the customer to be deleted.
-
-### place_order
-
-- **Description**: Places an order for a customer.
-- **Parameters**:
-  - `customer_id`: Unique ID of the customer placing the order.
-  - `product_ids`: List of product IDs to be ordered.
-
-### view_orders
-
-- **Description**: Displays all orders in the system.
-
-### save_to_file
-
-- **Description**: Saves the system data to a file.
-- **Parameters**:
-  - `filename`: Name of the file to save the data to.
-
-### load_from_file
-
-- **Description**: Loads the system data from a file.
-- **Parameters**:
-  - `filename`: Name of the file to load the data from.
+3. **Bar Chart:**
+   - Write a Python function `plot_bar_chart(labels, values)` that generates a bar chart using Matplotlib for the given `labels` and `values`.
